@@ -9,3 +9,14 @@ public class SyntaxTrivia
 
     public string Text { get; }
 }
+
+public class SyntaxTriviaList {
+    private readonly SyntaxTrivia[] _trivia;
+
+    public SyntaxTriviaList(SyntaxTrivia[] trivia)
+    {
+        _trivia = trivia;
+    }
+
+    public SyntaxTrivia[] Trivia => _trivia;
+}
